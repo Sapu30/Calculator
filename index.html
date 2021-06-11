@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+    <div class = "container">
+    <div class = "calculator">
+    <form name = "box">
+    <input id = "screen" type="text" name="screen" placeholder = "0" readonly>
+    <br>
+    <input class = "button clearButton" type = "button" value="C" onclick="box.screen.value =''">
+    <input class = "button clearButton" type = "button" value=&larr; onclick="box.screen.value = box.screen.value.slice(0,-1)">
+    <input class = "button mathbutton" type = "button" value="%" onclick="box.screen.value +='%'">
+    <input class = "button mathbutton" type = "button" value="/" onclick="box.screen.value +='/'">
+    <br>
+    <input class = "button" type = "button" value="7" onclick="box.screen.value +='7'">
+    <input class = "button" type = "button" value="8" onclick="box.screen.value +='8'">
+    <input class = "button" type = "button" value="9" onclick="box.screen.value +='9'">
+    <input class = "button mathbutton" type = "button" value="X" onclick="box.screen.value +='*'">
+    <br>
+    <input class = "button" type = "button" value="4" onclick="box.screen.value +='4'">
+    <input class = "button" type = "button" value="5" onclick="box.screen.value +='5'">
+    <input class = "button" type = "button" value="6" onclick="box.screen.value +='6'">
+    <input class = "button mathbutton" type = "button" value="-" onclick="box.screen.value +='-'">
+    <br>
+    <input class = "button" type = "button" value="1" onclick="box.screen.value +='1'">
+    <input class = "button" type = "button" value="2" onclick="box.screen.value +='2'">
+    <input class = "button" type = "button" value="3" onclick="box.screen.value +='3'">
+    <input class = "button mathbutton" type = "button" value="+" onclick="box.screen.value +='+'">
+    <br>
+    <input class = "button" type = "button" value="00" onclick="box.screen.value +='00'">
+    <input class = "button" type = "button" value="0" onclick="box.screen.value +='0'">
+    <input class = "button" type = "button" value="." onclick="box.screen.value +='.'">
+    <input class = "button finalbutton" type = "button" value="=" onclick="box.screen.value = eval(box.screen.value)">
+    <br>
+    </form>
+    </div>
+    
+ </div>
+     
+    </body>
+</html>
