@@ -30,9 +30,10 @@ body {
 }
 
 .button {
+    position : relative;
     margin: 15px 0 0 5px;
-    height: 41px;
-    width: 41px;
+    height: 42px;
+    width: 42px;
     border: none;
     outline: none;
     font-weight: bold;
